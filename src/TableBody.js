@@ -194,7 +194,7 @@ class TableBody extends Component {
             hidden={ !isExpanding }
             colSpan={ expandColSpan }
             width={ "100%" }>
-            { this.props.expandComponent(data) }
+            { this.props.expandComponent(data, isExpanding) }
           </ExpandComponent>
         );
       }
